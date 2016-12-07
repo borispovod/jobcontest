@@ -29,7 +29,7 @@ app.get('/api/number', (req, res, next) => {
 });
 
 app.get('/api/message', (req, res, next) => {
-  function getMessage() {
+  let getMessage = () => {
 	 this.message = "Hello, world";
 	 
 	 return new Promise(function (resolve) {
